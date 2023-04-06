@@ -1,6 +1,5 @@
 # WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus
 
-This is the repository for SIGIR 2023 submission. We are still in the process of preparing the code, dataset, and model.
 
 ## Abstract
 
