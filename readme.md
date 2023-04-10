@@ -5,7 +5,7 @@
 
 In this paper, we introduce a new NLP task -- generating short factual articles for queries by mining supporting evidence from the Web. In this task, called WebBrain, the ultimate goal is to generate a fluent, informative, and factually-correct short article (e.g., a Wiki article) for a factual query unseen in Wikipedia. To enable experiments on WebBrain, we construct a large-scale dataset WebBrain-Raw by extracting English Wikipedia articles and their crawlable Wiki references. WebBrain-Raw is ten times larger than the previous biggest peer dataset, which can %We believe that WebBrain-Raw would greatly benefit the research community. Besides, we empirically analyze the performances of the current state-of-the-art NLP techniques on WebBrain and introduce a new framework ReGen, which enhances the generation factualness by improved evidence retrieval and task-specific pre-training for generation. xperiment results show that ReGen outperforms all baselines in both automatic and human evaluations.
 
-** To access to WebBrain datasets, please go to [this repo](https://github.com/qhjqhj00/WebBrain-Data). **
+**To access to WebBrain datasets, please go to [this repo](https://github.com/qhjqhj00/WebBrain-Data).**
 ## Requirements
 - Python == 3.7
 - PyTorch == 1.8.0
