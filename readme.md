@@ -106,3 +106,8 @@ WebBrain-G contains train / dev / test files, which are in the following format:
 [title] wiki_title [ref] [ref_id] ref_title ref_content [SPLIT] ... [SPLIT] target_text 
 ```
 where we append the Wiki title to the front of each reference, merge all references and the target text (label) with a special token [SPLIT].
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=qhjqhj00/WebBrain&type=Date)](https://star-history.com/#qhjqhj00/WebBrain&Date)
+
