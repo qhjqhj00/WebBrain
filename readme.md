@@ -1,36 +1,15 @@
-<div align=center>
-<h1>RecAgent: WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus</h1>
-<a href="https://pypi.org/project/recbole/">
-        <img src="https://img.shields.io/pypi/v/recbole" alt="PyPi Latest Release">
-    </a>
-    <a href="https://anaconda.org/aibox/recbole">
-        <img src="https://anaconda.org/aibox/recbole/badges/version.svg" alt="Conda Latest Release">
-    </a>
-    <img src="https://img.shields.io/badge/License-Apache2.0-blue" alt="license">
+# WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus
 
-</div>
 ## Abstract
 
 In this paper, we introduce a new NLP task -- generating short factual articles with references for queries by mining supporting evidence from the Web. In this task, called WebBrain, the ultimate goal is to generate a fluent, informative, and factually-correct short article (e.g., a Wikipedia article) for a factual query unseen in Wikipedia. To enable experiments on WebBrain, we construct a large-scale dataset WebBrain-Raw by extracting English Wikipedia articles and their crawlable Wikipedia references. WebBrain-Raw is ten times larger than the previous biggest peer dataset, which can greatly benefit the research community. From WebBrain-Raw, we construct two task-specific datasets: WebBrain-R and WebBrain-G, which are used to train in-domain retriever and generator, respectively. Besides, we empirically analyze the performances of the current state-of-the-art NLP techniques on WebBrain and introduce a new framework ReGen, which enhances the generation factualness by improved evidence retrieval and task-specific pre-training for generation. Experiment results show that ReGen outperforms all baselines in both automatic and human evaluations.
 
-## Citation
-See paper [here](https://arxiv.org/abs/2304.04358).
+<p align="center">
+  <img src="./fig/model.png" alt="RecAgnet Framework" width="70%">
+  <br>
+  <b>Figure 1</b>: Overview of WebBrain.
+</p>
 
-If you use the dataset in any publication or presentation, please cite:
-
-```
-@misc{qian2023webbrain,
-      title={WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus}, 
-      author={Hongjing Qian and Yutao Zhu and Zhicheng Dou and Haoqi Gu and Xinyu Zhang and Zheng Liu and Ruofei Lai and Zhao Cao and Jian-Yun Nie and Ji-Rong Wen},
-      year={2023},
-      eprint={2304.04358},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
-
-
-**For more information about the WebBrain datasets, please go to [this repo](https://github.com/qhjqhj00/WebBrain-Data).**
 ## Dataset
 
 ### Application form
@@ -132,7 +111,10 @@ The statistic information is as follow:
 
 In the paper, we evaluate a proposed model, ReGen on the WebBrain dataset. We release the source codes of ReGen in this Repo: [Link](https://github.com/qhjqhj00/WebBrain).
 
-# Terms of Use
+**For more information about the WebBrain datasets, please go to [this repo](https://github.com/qhjqhj00/WebBrain-Data).**
+
+
+## Terms of Use
 
 - The dataset is provided "as is" and without warranty or support of any kind.
 - You may use the dataset for research and educational purposes only.
@@ -142,12 +124,12 @@ In the paper, we evaluate a proposed model, ReGen on the WebBrain dataset. We re
 - You have the right to request removal of your data from the dataset. The dataset owner will make reasonable efforts to remove your data within a reasonable time period, subject to technical limitations and legal requirements.
 - The dataset owner may terminate your access to the dataset at any time for any reason.
 
-## Requirements
+## Code
+
+### Requirements
 - Python == 3.7
 - PyTorch == 1.8.0
 - Transformers >= 4.20
-
-## Usage
 
 ### Retriever training
 
@@ -191,8 +173,23 @@ python /cache/code/run_model_train.py \
 ```
 
 
-# FAQ
+## FAQ
 
+## Citation
+See paper [here](https://arxiv.org/abs/2304.04358).
+
+If you use the dataset in any publication or presentation, please cite:
+
+```
+@misc{qian2023webbrain,
+      title={WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus}, 
+      author={Hongjing Qian and Yutao Zhu and Zhicheng Dou and Haoqi Gu and Xinyu Zhang and Zheng Liu and Ruofei Lai and Zhao Cao and Jian-Yun Nie and Ji-Rong Wen},
+      year={2023},
+      eprint={2304.04358},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 
 ## Star History
